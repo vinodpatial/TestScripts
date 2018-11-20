@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+ 
+  <!-- SignUp: only url -->
+  
+  <!--  others:  All parameter use  userID, Password, url --> 
+     <parameter name="url" value="https://qa.recordlinc.com"></parameter> 
+    <!--  <parameter name="userId" value="john@yopmail.com"></parameter> 
+     <parameter name="password" value="Hello@123"></parameter>  --> 
+    
+     <classes>
+  
+     
+      
+        <class name="Application_recordlinc.Profile_Update_other"/>
+      <!-- 
+      
+    
+   1.     <class name="Application_recordlinc.Doctor_signup"/> 
+   2.     <class name="Application_recordlinc.Profile_Update"/>
+   3.     <class name="Application_recordlinc.Profile_Update_other"/>
+    --> 
+    </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
